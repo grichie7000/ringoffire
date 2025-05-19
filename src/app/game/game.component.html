@@ -1,0 +1,27 @@
+<div class="field">
+  <div class="card-stack">
+    @for (c of [0, 1, 2, 3]; track $index) {
+    <img
+      src="/assets/img/card_cover.png"
+      alt="card_cover"
+      [style.right.px]="c * 5"
+    />
+    }
+    <img
+      (click)="takeCard()"
+      class="top-card"
+      style="right: 25px"
+      src="/assets/img/card_cover.png"
+      alt="card_cover"
+    />
+    @if (pickCardAnimation) {
+    <img
+      (click)="takeCard()"
+      class="pick-card"
+      style="right: 25px"
+      src="/assets/img/ace_1.png"
+      alt="card_cover"
+    />
+    }
+  </div>
+</div>
