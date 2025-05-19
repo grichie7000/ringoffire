@@ -14,12 +14,14 @@
       src="/assets/img/card_cover.png"
       alt="card_cover"
     />
-    @if (pickCardAnimation) {
+    @for (card of game.playedCards ; track $index) {
+    <img class="played-card" src="/assets/img/{{ card }}.png" alt="" />
+    } @if (pickCardAnimation) {
     <img
       (click)="takeCard()"
       class="pick-card"
       style="right: 25px"
-      src="/assets/img/ace_1.png"
+      src="/assets/img/{{ currentCard }}.png"
       alt="card_cover"
     />
     }
