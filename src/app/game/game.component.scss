@@ -27,7 +27,7 @@
   }
 }
 
-.played-card{
+.played-card {
   right: 25px;
   transform: scale(1.7) translateX(100px) translateY(-180px) rotate(-10deg);
 }
@@ -50,4 +50,22 @@
   100% {
     transform: scale(1.7) translateX(100px) translateY(-180px) rotate(-10deg);
   }
+}
+
+.player-position {
+  position: absolute;
+  right: 0;
+}
+
+.btn-add{
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+}
+
+.pin-bottom{
+  position: absolute;
+  bottom: 32px;
+  left: 100px;
+  right: 100px;
 }
